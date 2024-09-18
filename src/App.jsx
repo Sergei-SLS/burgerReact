@@ -1,15 +1,15 @@
-import { Container } from "./components/Header/Container/Container";
+import { Catalog } from "./components/Header/Catalog/Catalog";
 import { Header } from "./components/Header/Header";
+import { Navigation } from "./components/Header/Navigation/Navigation";
 
 export const App = () => {
   return (
     <>
       <Header />
       <main>
-        <nav>
-          <Container name="Sergey" className="navigation_container" />
-        </nav>
-        <section></section>
+        <Navigation />
+
+        <Catalog />
       </main>
       <footer></footer>
     </>
