@@ -4,7 +4,7 @@ import "./count.css";
 
 export const Order = () => {
   return (
-    <div className="catalog__order order">
+    <div className="order">
       <section className="order__wrapper">
         <div className="order__header" tabIndex="0" role="button">
           <h2 className="order__title">Корзина</h2>
@@ -14,31 +14,6 @@ export const Order = () => {
 
         <div className="order__wrap_list">
           <ul className="order__list">
-            <li className="order__item">
-              <img
-                className="order__image"
-                src="img/burger_1.jpg"
-                alt="Супер сырный"
-              />
-
-              <div className="order__goods goods">
-                <h3 className="goods__title">Супер сырный</h3>
-
-                <p className="goods__weight">512г</p>
-
-                <p className="goods__price">
-                  1279
-                  <span className="currency">₽</span>
-                </p>
-              </div>
-
-              <div className="count">
-                <button className="count__minus">-</button>
-                <p className="count__amount">1</p>
-                <button className="count__plus">+</button>
-              </div>
-            </li>
-
             <li className="order__item">
               <img
                 className="order__image"
