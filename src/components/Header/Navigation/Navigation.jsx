@@ -14,7 +14,7 @@ export const Navigation = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(categoryRequestAsync());
+    dispatch(categoryRequestAsync("max"));
   }, []);
 
   return (
