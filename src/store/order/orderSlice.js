@@ -85,9 +85,9 @@ const orderSlice = createSlice({
             (product) => product.id === item.id
           );
 
-          product.count = item.count;
-
-          return product;
+          return { ...product, count: item.count };
+          /*product.count = item.count;
+          return product;*/
         });
 
         state.error = "";
